@@ -1,0 +1,144 @@
+body{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #fff;
+}
+
+h1{
+  font-size: 110px;
+}
+
+input {
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+}
+
+.toDoList {
+  list-style: none;
+  max-width: 300px;
+  margin: 20px auto 0;
+  padding: 0;
+}
+
+.toDoList li{
+  list-style: none;
+  font-size: 18px;
+  text-align:left;
+  color: #ecf0f1;
+}
+
+.toDoList li:before{
+  content:'-';
+  display: inline;
+  margin-right: 5px;
+}
+
+button{
+  color: #fff;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.nameform, .toDoForm {
+  width: 300px;
+  margin: 50px auto 0;
+}
+
+.nameform input, .toDoForm input {
+  width: 100%;
+  padding: 5px;
+}
+
+.nameform input::placeholder, .toDoForm input::placeholder {
+  color: #fff;
+}
+
+.toDoArea {
+  display: none;
+}
+
+.showing{
+  display: block;
+  transition: color .5s ease-in-out;
+}
+
+.bgImg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+.weather {
+  margin-top: 50px;
+}
+
+.temp{
+  display: block;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.place{
+  display: block;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+@keyframes fadeIn{
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity : 1;
+  }
+}
+
+.count {
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  transform: translateX(-50%);
+}
+
+.count span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.count input {
+  width: 50px;
+  padding: 5px;
+}
+
+.count input::placeholder {
+  color: #fff;
+}
+
+.count button {
+  margin: 5px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #ffffff57;
+}
+
+.timerDisplay {
+  font-size: 18px;
+}

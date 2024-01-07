@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="weather">
+    <span class="temp"></span>
+    <span class="place"></span>
+  </div>
+
+  <div class="clock">
+    <h1>00:00</h1>
+  </div>
+  
+  <h2 class="greetings greetings"></h2>
+
+  <form class="nameform form">
+    <input type='text' placeholder="What is your name?"/>
+  </form>
+  
+  <div class="toDoArea">
+    <form class="toDoForm">
+      <input type="text" placeholder="Write what to do"/>
+    </form>
+
+    <ul class="toDoList">
+    </ul>
+  </div>
+
+  <div class="count">
+    <span>Count down</span>
+    <input type="number" class="countdownInput" placeholder="Please enter a number">
+    <button onclick="startCountdown()">Start</button>
+    <p class="timerDisplay"></p>
+  </div>
+
+  <script src="clock.js"></script>
+  <script src="greeting.js"></script>
+  <script src="todo.js"></script>
+  <script src="bg.js"></script>
+  <script src="weather.js"></script>
+  <script src="count.js"></script>
+</body>
+</html>
